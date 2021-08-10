@@ -164,7 +164,6 @@ function onUp(ev) {
     gIsDown = false;
 }
 
-function onSave() {}
 function onClear() {
     gCtx.fillStyle = colors.bgc;
     gCtx.fillRect(0, 0, gElCanvas.width, gElCanvas.height);
