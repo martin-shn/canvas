@@ -11,28 +11,29 @@
     <body onload="onInit()">
         <h1>Mister Canvas</h1>
         <nav>
-            <label for="bgc-color">BGC Color:</label>
-            <input type="color" id="bgc-color" value="#00FFFF" onchange="onBgcColor(this)" />
-            <label for="border-width">Border Width:</label>
-            <select id="border-width" onchange="onBorderWidth(this)">
-                <option value="0">None</option>
-                <option value="2">Thin</option>
-                <option value="4" selected>Normal</option>
-                <option value="6">Heavy</option>
-                <option value="8">Very heavy</option>
-            </select>
-            <label for="border-color">Border Color:</label>
-            <input type="color" id="border-color" onchange="onBorderColor(this)" />
-            <label for="fill-color">Fill Color:</label>
-            <input type="color" id="fill-color" onchange="onFillColor(this)" />
-            <label for="shape">Shape:</label>
-            <select id="shape" onchange="onShape(this)">
-                <option value="square">Square</option>
-                <option value="circle">Circle</option>
-                <option value="line">Line</option>
-                <option value="magic">Magic</option>
-            </select>
-            <input type="file" class="btn upload-btn" accept="image/jpeg, image/png" onchange="onUpload(this)"></button>
+            <label for="bgc-color">BGC Color: <input type="color" id="bgc-color" value="#00FFFF" onchange="onBgcColor(this)" /></label>
+            <label for="border-width"
+                >Border Width:
+                <select id="border-width" onchange="onBorderWidth(this)">
+                    <option value="0">None</option>
+                    <option value="2">Thin</option>
+                    <option value="4" selected>Normal</option>
+                    <option value="6">Heavy</option>
+                    <option value="8">Very heavy</option>
+                </select></label
+            >
+            <label for="border-color">Border Color: <input type="color" id="border-color" onchange="onBorderColor(this)" /></label>
+            <label for="fill-color">Fill Color: <input type="color" id="fill-color" onchange="onFillColor(this)" /></label>
+            <label for="shape"
+                >Shape:
+                <select id="shape" onchange="onShape(this)">
+                    <option value="square">Square</option>
+                    <option value="circle">Circle</option>
+                    <option value="line">Line</option>
+                    <option value="magic">Magic</option>
+                </select></label
+            >
+            <input type="file" class="btn upload-btn" accept="image/jpeg, image/png" onchange="onUpload(this)" />
             <button class="btn download-btn" onclick="onDownload()">Download</button>
             <button class="btn save-btn" onclick="onSave()">Save</button>
             <button class="btn clear-btn" onclick="onClear()">Clear</button>
@@ -43,7 +44,7 @@
         </div>
         <footer>
             <div class="user-msg"></div>
-            <button onclick="uploadImg()"><img src="img/share.png"></button>
+            <button onclick="uploadImg()"><img src="img/share.png" /></button>
         </footer>
 
         <script src="js/upload-service.js"></script>

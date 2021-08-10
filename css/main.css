@@ -17,9 +17,11 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    row-gap: 10px;
+    flex-wrap: wrap;
 }
 
-nav > *:not(label) {
+nav *:not(label) {
     margin-right: 20px;
     padding: 5px 10px;
     border-radius: 5px;
